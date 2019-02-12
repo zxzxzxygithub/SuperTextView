@@ -5,10 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 
 import com.allen.library.SuperTextView;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.drawable.GlideDrawable;
-import com.bumptech.glide.request.animation.GlideAnimation;
-import com.bumptech.glide.request.target.SimpleTarget;
 import com.squareup.picasso.Picasso;
 
 /**
@@ -78,30 +74,30 @@ public class TypeActivity extends AppCompatActivity {
                 .load(url1)
                 .placeholder(R.drawable.head_default)
                 .into(superTextView.getLeftIconIV());
-        Glide.with(this)
-                .load(url2)
-                .placeholder(R.drawable.head_default)
-                .fitCenter()
-                .into(superTextView2.getRightIconIV());
-
-        Glide.with(this)
-                .load(url3)
-                .placeholder(R.drawable.head_default)
-                .into(new SimpleTarget<GlideDrawable>() {
-                    @Override
-                    public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> glideAnimation) {
-                        superTextView3.setRightTvDrawableRight(resource);
-                    }
-                });
-
-        Glide.with(this)
-                .load(url4)
-                .into(new SimpleTarget<GlideDrawable>() {
-                    @Override
-                    public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> glideAnimation) {
-                        alipayStv.setLeftTvDrawableRight(resource);
-                    }
-                });
+//        Glide.with(this)
+//                .load(url2)
+//                .placeholder(R.drawable.head_default)
+//                .fitCenter()
+//                .into(superTextView2.getRightIconIV());
+//
+//        Glide.with(this)
+//                .load(url3)
+//                .placeholder(R.drawable.head_default)
+//                .into(new SimpleTarget<GlideDrawable>() {
+//                    @Override
+//                    public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> glideAnimation) {
+//                        superTextView3.setRightTvDrawableRight(resource);
+//                    }
+//                });
+//
+//        Glide.with(this)
+//                .load(url4)
+//                .into(new SimpleTarget<GlideDrawable>() {
+//                    @Override
+//                    public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> glideAnimation) {
+//                        alipayStv.setLeftTvDrawableRight(resource);
+//                    }
+//                });
     }
 
 
