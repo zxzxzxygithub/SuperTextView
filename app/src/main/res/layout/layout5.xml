@@ -17,7 +17,9 @@
             stv:sLeftIconRes="@drawable/head_default"
             stv:sLeftTopTextString="张三"
             stv:sLeftViewGravity="left_center"
-            stv:sRightTextString="已实名" />
+            stv:sRightTextString="已实名"
+            stv:sDividerLineHeight="20dp"
+            />
 
         <com.allen.library.SuperTextView
             android:layout_width="match_parent"
